@@ -1,4 +1,4 @@
-//: [Priority](@previous)
+//: [Sync vs. Async](@previous)
 import PlaygroundSupport
 import Foundation
 /*:

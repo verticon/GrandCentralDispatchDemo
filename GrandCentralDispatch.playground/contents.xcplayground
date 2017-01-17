@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw' executeOnSourceChanges='false'>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'>
     <pages>
         <page name='Overview'/>
         <page name='Sync vs. Async'/>
-        <page name='Priority'/>
         <page name='UI Responsiveness'/>
         <page name='Concurrency'/>
         <page name='UI Access'/>
+        <page name='Quality of Service'/>
     </pages>
 </playground>

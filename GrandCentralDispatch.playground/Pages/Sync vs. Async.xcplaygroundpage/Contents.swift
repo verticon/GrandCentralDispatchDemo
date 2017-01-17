@@ -2,25 +2,28 @@
 import UIKit
 import PlaygroundSupport
 /*:
- The sync function waits, on the current thread, for the global thread to complete the work.
+ The sync function queues the work and waits for it to be executed. When the work is dequeued it will be executed on the current thread; i.e. the caller's thread. When the work has completed the call to queue.sync will return.
  */
 //#-editable-code
 func sync() {
+    let caller = Thread.current
     let queue = DispatchQueue.global()
     queue.sync {
-        print("\tPerforming Synchonous Work on \(queue.label)")
+        print("\tPerforming synchonous work for caller \(caller) from queue \(queue.label) on thread \(Thread.current)")
     }
 }
 //#-end-editable-code
 /*:
- The async function queues the work and returns without waiting.
+ The async function queues the work and returns without waiting. When the work is dequeued it will be executed on some other thread. Note the use of the DispatchTime to delay the execution. Without this things can get tricky: the system could choose to execute the work prior to the return from queue.async() and thus make it appear that the work had been performed synchronously.
  */
 //#-editable-code
 func async() {
+    let caller = Thread.current
     let queue = DispatchQueue.global()
-    queue.async {
-        print("\tPerforming Asynchonous Work on \(queue.label)")
-
+    let when: DispatchTime = .now() + .milliseconds(100)
+    queue.asyncAfter(deadline: when) {
+    //queue.async {
+        print("\tPerforming asynchonous work for caller \(caller) from queue \(queue.label) on thread \(Thread.current)")
     }
 }
 //#-end-editable-code
@@ -45,4 +48,4 @@ demo.buttonListener = { button in
 //#-end-editable-code
 PlaygroundPage.current.needsIndefiniteExecution = true
 PlaygroundPage.current.liveView = demo
-//: [Priority](@next)
+//: [UI Responsiveness](@next)

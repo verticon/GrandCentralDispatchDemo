@@ -1,4 +1,4 @@
-//: [Sync vs. Async](@previous)
+//: [UI Access](@previous)
 import UIKit
 import PlaygroundSupport
 /*:
@@ -12,17 +12,18 @@ func byQueue() {
     let priorities: [DispatchQoS.QoSClass] = [.background, .default, .utility, .userInitiated, .userInteractive]
     for qos in priorities {
         let queue = DispatchQueue.global(qos: qos)
-        print("\tSubmitting to \(queue.label) queue")
+        //print("\tSubmitting to \(queue.label) queue")
         queue.asyncAfter(deadline: when) {
             print("\tPerforming work on \(queue.label) queue")
         }
     }
 }
+
 func byItem(queue: DispatchQueue) {
     let when: DispatchTime = .now() + .milliseconds(500)
     let priorities: [DispatchQoS] = [.background, .utility, .default, .userInitiated, .userInteractive]
     for qos in priorities {
-        print("\tSubmitting \(qos.qosClass) item")
+        //print("\tSubmitting \(qos.qosClass) item")
         queue.asyncAfter(deadline: when, qos: qos) {
             print("\tPerforming \(qos.qosClass) work on \(queue.label) queue")
         }
@@ -47,5 +48,3 @@ demo.buttonListener = { button in
 //#-end-editable-code
 PlaygroundPage.current.needsIndefiniteExecution = true
 PlaygroundPage.current.liveView = demo
-
-//: [UI Responsiveness](@next)

@@ -14,6 +14,7 @@
  ### Remarks
  * We will be looking at the swift 3 version of the GCD api; the documentation has not yet (01/17/17) caught up.
  * What is the best order in which to present the concepts?
+ * The more that I work with GCD the more I realize how much there is to understand. Indications (ex. the order of print statements) can be deceiving.
  
  ### Additional Reading/Viewing:
  * [Concurreny Programming](https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091-CH1-SW1)
