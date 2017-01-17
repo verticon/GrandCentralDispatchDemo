@@ -56,4 +56,4 @@ demo.buttonListener = { button in
 //#-end-editable-code
 PlaygroundPage.current.needsIndefiniteExecution = true
 PlaygroundPage.current.liveView = demo
-//: [Concurrency](@next)
+//: [UI Access](@next)

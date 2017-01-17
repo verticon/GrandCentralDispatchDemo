@@ -1,4 +1,4 @@
-//: [Concurrency](@previous)
+//: [UI Responsiveness](@previous)
 import PlaygroundSupport
 import UIKit
 /*:
@@ -43,5 +43,5 @@ demo.buttonListener = { button in
 //#-end-editable-code
 PlaygroundPage.current.needsIndefiniteExecution = true
 PlaygroundPage.current.liveView = demo
-//: [Quality of Service](@next)
+//: [Concurrancy](@next)
 

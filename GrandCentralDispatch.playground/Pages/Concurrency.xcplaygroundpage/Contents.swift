@@ -1,4 +1,4 @@
-//: [UI Responsiveness](@previous)
+//: [UI Access](@previous)
 import UIKit
 import PlaygroundSupport
 /*:
@@ -74,4 +74,4 @@ demo.buttonListener = { button in
 //#-end-editable-code
 PlaygroundPage.current.needsIndefiniteExecution = true
 PlaygroundPage.current.liveView = demo
-//: [UI Access](@next)
+//: [Quality of Service](@next)

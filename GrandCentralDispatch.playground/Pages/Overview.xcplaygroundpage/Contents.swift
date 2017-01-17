@@ -12,9 +12,8 @@
  * Passing Functions/Closures
  
  ### Remarks
- * We will be looking at the swift 3 version of the GCD api; the documentation has not yet (01/17/17) caught up.
- * What is the best order in which to present the concepts?
- * The more that I work with GCD the more I realize how much there is to understand. Indications (ex. the order of print statements) can be deceiving.
+ * We will be looking at the swift 3 version of the GCD api. The documentation has not yet (01/17/17) caught up.
+ * The more that I work with GCD the more I realize how much there is to understand. Indications (ex. the order of print statements) can be deceiving. I encountered some surprises on the Concurrency and Quality of Service pages.
  
  ### Additional Reading/Viewing:
  * [Concurreny Programming](https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091-CH1-SW1)

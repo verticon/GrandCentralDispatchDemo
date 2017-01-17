@@ -1,4 +1,4 @@
-//: [UI Access](@previous)
+//: [Concurrancy](@previous)
 import UIKit
 import PlaygroundSupport
 /*:

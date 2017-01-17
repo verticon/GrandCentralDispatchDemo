@@ -4,8 +4,8 @@
         <page name='Overview'/>
         <page name='Sync vs. Async'/>
         <page name='UI Responsiveness'/>
-        <page name='Concurrency'/>
         <page name='UI Access'/>
+        <page name='Concurrency'/>
         <page name='Quality of Service'/>
     </pages>
 </playground>
